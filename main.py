@@ -20,7 +20,9 @@ def read_root():
 
 @app.get("/seed")
 def seed_todos():
+
     todos.clear()
+    
     for i in range(10):
         todos.append(
             {
